@@ -1,11 +1,19 @@
 
+
 #product-overview {
-    background: url("freedom.jpg");
+    background: url("images/freedom.jpg") left 10% bottom 20%/cover no-repeat border-box;
+    /* background-image: url("freedom.jpg");
+    background-size: cover;
+    background-position: left 10% bottom 20%; */
+    /* background-repeat: no-repeat;
+    background-origin: border-box;
+    background-clip: border-box; */
     width: 100%;
     height: 528px;
-    padding: 10px; 
+    padding: 10px;
     margin-top: 43px;
-    position: relative;  
+    /* border: 5px dashed red; */
+    position: relative;   
 }
 
 .section-title {
@@ -17,15 +25,14 @@
     color: white;
     font-family: 'Anton', sans-serif;
     position: absolute;
-    bottom:5%;
-    left : 3%;
+    bottom: 5%;
+    left: 3%;
 }
 
-.plan__list{
-    width:80%;
+.plan__list {
+    width: 80%;
     margin: auto;
     text-align: center;
-
 }
 
 .plan {
@@ -78,62 +85,47 @@
     margin: 8px 0;
 }
 
-#key-features{
-    background-color: #ff1b68 ;   
+#key-features {
+    background: #ff1b68;
     margin-top: 80px;
     padding: 16px;
-    
 }
 
-#key-features .section-title{
- color:aliceblue;   
- margin: 32px;
+#key-features .section-title {
+    color: white;
+    margin: 32px;
 }
 
-.key-feature__list{
+.key-feature__list {
     list-style: none;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-.key-feature{
-    display:inline-block;
-    width:30%;
+.key-feature {
+    display: inline-block;
+    width: 30%;
     vertical-align: top;
 }
 
-.key-feature__image{
-    background-color: #ffcede;
-    width:128px;/*put height and width equal so you can form a squre*/
-    height:128px;
-    border: 2px solid #424242;/*add a  border*/
-    border-radius: 50%;/* radius 50% will turn it into a perfect circle*/
-    margin:auto;/* this will center your circles in the middile as it gives 
-                     same margin all directions*/
-    
+.key-feature__image {
+    background: #ffcede;
+    width: 128px;
+    height: 128px;
+    border: 2px solid #424242;
+    border-radius: 50%;
+    margin: auto;
 }
 
-.key-feature__description{
+.key-feature__description {
     text-align: center;
     font-weight: bold;
     color: white;
     font-size: 20px;
 }
- 
-
-
-
-
-
 
 /* h1 {
     font-family: sans-serif;
 } */
-
-
-
-
-
-
 
