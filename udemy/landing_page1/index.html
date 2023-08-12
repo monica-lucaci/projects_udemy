@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>uHost</title>
-    <link rel="shortcut icon" href="favicon.png">
+    <link rel="shortcut icon" href="../landing_page1/images/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link rel="stylesheet" href="shared.css">
@@ -15,6 +15,13 @@
 
 <body>
     <div class="backdrop"></div>
+    <div class="modal">
+        <h1 class="modal__title">Do you want to continue?</h1>
+        <div class="modal__actions">
+            <a href="start-hosting/index.html" class="modal__action">Yes!</a>
+            <button class="modal__action modal__action--negative" type="button">No!</button>
+        </div>
+    </div>
     <header class="main-header">
         <div>
             <a href="index.html" class="main-header__brand">
@@ -250,6 +257,7 @@
             </ul>
         </nav>
     </footer>
+    <script src="shared.js"></script>
 </body>
 
 </html>
