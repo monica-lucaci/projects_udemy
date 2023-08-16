@@ -1,3 +1,14 @@
+@font-face {
+    font-family: "AnonymousPro";
+    src: url("anonymousPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "AnonymousPro";
+    src: url("anonymousPro-Bold.ttf");
+    font-weight: 700;
+}
+
 main {
     padding-top: 2rem;
 }
@@ -25,6 +36,7 @@ main {
     box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     border-color: #ff5454;
     /* border-color: #ff5454 !important; */
+    animation: push-up 1s ease-out forwards;
 }
 
 .package a {
@@ -43,7 +55,7 @@ main {
     color: white;
     background: #ff5454;
     padding: 0.5rem;
-    transform: rotateZ(45deg) translateX(3.5rem) translateY(-1rem);
+    transform: rotate(45deg) translate(3.5rem, -1rem);
     transform-origin: center;
     width: 12rem;
     text-align: center;
@@ -56,9 +68,10 @@ main {
 .package__info {
     padding: 1rem;
     border: 1px solid #0e4f1f;
-    font-size: 1.2rem;
     color: #0e4f1f;
     background: white;
+    font-size: 1.2rem;
+    /* font-style font-variant font-weight font-size/line-height font-family*/
 }
 
 .clearfix {
@@ -114,5 +127,19 @@ main {
     #free:hover,
     #free:active {
       border-right-color: #ff5454;
+    }
+}
+
+@keyframes push-up {
+    0% {
+        transform: translateY(0);
+    }
+
+    33% {
+        transform: translateY(-1.5rem);
+    }
+    
+    100% {
+        transform: translateY(-1rem);
     }
 }
